@@ -1,0 +1,4 @@
+include pyueye\__init__.py
+include pyueye\dll.py
+include pyueye\ueye.py
+include pyueye\ueye_tools.py

@@ -1,2 +1,2 @@
 # ids-pyueye
-Repository with the source code of the pyueye package maintained by IDS
+Source code of the pyueye package maintained by IDS. Downloaded from pypi

@@ -1,0 +1,77 @@
+Metadata-Version: 1.0
+Name: pyueye
+Version: 4.90.0.0
+Summary: pyueye - Python bindings for uEye API.
+Home-page: http://www.ids-imaging.com
+Author: IDS Imaging Development Systems GmbH
+Author-email: info@ids-imaging.com
+License: 3-Clause BSD License
+Description: pyueye
+        ======
+        Python bindings for uEye API
+        
+        Links
+        -----
+        `www.ids-imaging.com <http://www.ids-imaging.com>`_
+        
+        Description
+        -----------
+        PyuEye is a lean wrapper implementation of Python function objects that represent uEye API functions. As there is no intelligence in the PyuEye interface, it is as near as possible to the uEye C API and always up-to-date. Benefit from many Python advantages, for example the interactive programming of your uEye camera. Write and test small code snippets without the complex setup of a programming IDE with a toolchain. The PyuEye interface is ideal for prototyping uEye camera applications for all supported uEye platforms (Windows, Linux, Linux Embedded).
+        
+        You find more information on this software version in the PyuEye `release notes <https://en.ids-imaging.com/pyueye-release-notes>`_.
+        
+        
+        Installation
+        ------------
+        > pip install pyueye
+        
+        Quickstart
+        ----------
+        
+        ::
+        
+            from pyueye import ueye
+        
+            h_cam = ueye.HIDS(0)
+            ret = ueye.is_InitCamera(h_cam, None)
+        
+            if ret != ueye.IS_SUCCESS:
+                pass
+        
+        License
+        -------
+        
+        ::
+        
+         PyuEye - uEye API Python bindings
+        
+         Copyright (c) 2017 by IDS Imaging Development Systems GmbH.
+         All rights reserved.
+        
+         PyuEye is a lean wrapper implementation of Python function objects that
+         represent uEye API functions. These bindings could be used as is.
+        
+         Redistribution and use in source and binary forms, with or without
+         modification, are permitted provided that the following conditions are met:
+         1. Redistributions of source code must retain the above copyright notice,
+            this list of conditions and the following disclaimer.
+         2. Redistributions in binary form must reproduce the above copyright notice,
+            this list of conditions and the following disclaimer in the documentation
+            and/or other materials provided with the distribution.
+         3. Neither the name of the copyright holder nor the names of its contributors
+            may be used to endorse or promote products derived from this software
+            without specific prior written permission.
+        
+         THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+         AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+         IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+         ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+         LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+         CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+         SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+         INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+         CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+         ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+         POSSIBILITY OF SUCH DAMAGE.
+        
+Platform: UNKNOWN

@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.cfg
+setup.py
+pyueye/__init__.py
+pyueye/dll.py
+pyueye/ueye.py
+pyueye/ueye_tools.py
+pyueye.egg-info/PKG-INFO
+pyueye.egg-info/SOURCES.txt
+pyueye.egg-info/dependency_links.txt
+pyueye.egg-info/requires.txt
+pyueye.egg-info/top_level.txt
