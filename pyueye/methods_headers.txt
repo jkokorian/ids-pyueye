@@ -1,0 +1,133 @@
+def is_CaptureStatus(hCam, nCommand, pParam, nSizeOfParam):
+def is_WaitEvent(hCam, which, nTimeout):
+def is_SetSaturation(hCam, ChromU, ChromV):
+def is_PrepareStealVideo(hCam, Mode, StealColorMode):
+def is_StopLiveVideo(hCam, Wait):
+def is_FreezeVideo(hCam, Wait):
+def is_CaptureVideo(hCam, Wait):
+def is_IsVideoFinish(hCam, pValue):
+def is_HasVideoStarted(hCam, pbo):
+def is_AllocImageMem(hCam, width, height, bitspixel, ppcImgMem, pid):
+def is_SetImageMem(hCam, pcMem, id):
+def is_FreeImageMem(hCam, pcMem, id):
+def is_GetImageMem(hCam, pMem):
+def is_GetActiveImageMem(hCam, ppcMem, pnID):
+def is_InquireImageMem(hCam, pcMem, nID, pnX, pnY, pnBits, pnPitch):
+def is_GetImageMemPitch(hCam, pPitch):
+def is_SetAllocatedImageMem(hCam, width, height, bitspixel, pcImgMem, pid):
+def is_CopyImageMem(hCam, pcSource, nID, pcDest):
+def is_CopyImageMemLines(hCam, pcSource, nID, nLines, pcDest):
+def is_AddToSequence(hCam, pcMem, nID):
+def is_ClearSequence(hCam):
+def is_GetActSeqBuf(hCam, pnNum, ppcMem, ppcMemLast):
+def is_LockSeqBuf(hCam, nNum, pcMem):
+def is_UnlockSeqBuf(hCam, nNum, pcMem):
+def is_GetError(hCam, pErr, ppcErr):
+def is_SetErrorReport(hCam, Mode):
+def is_SetColorMode(hCam, Mode):
+def is_GetColorDepth(hCam, pnCol, pnColMode):
+def is_RenderBitmap(hCam, nMemID, hwnd, nMode):
+def is_SetDisplayMode(hCam, Mode):
+def is_SetDisplayPos(hCam, x, y):
+def is_SetHwnd(hCam, hwnd):
+def is_GetVsyncCount(hCam, pIntr, pActIntr):
+def is_InitEvent(hCam, hEv, which):
+def is_ExitEvent(hCam, which):
+def is_EnableEvent(hCam, which):
+def is_DisableEvent(hCam, which):
+def is_SetExternalTrigger(hCam, nTriggerMode):
+def is_SetTriggerCounter(hCam, nValue):
+def is_SetRopEffect(hCam, effect, param, reserved):
+def is_ExitCamera(hCam):
+def is_GetCameraInfo(hCam, pInfo):
+def is_CameraStatus(hCam, nInfo, ulValue):
+def is_GetCameraType(hCam):
+def is_GetUsedBandwidth(hCam):
+def is_GetFrameTimeRange(hCam, min, max, intervall):
+def is_SetFrameRate(hCam, FPS, newFPS):
+def is_GetFramesPerSecond(hCam, dblFPS):
+def is_GetSensorInfo(hCam, pInfo):
+def is_GetRevisionInfo(hCam, prevInfo):
+def is_EnableAutoExit(hCam, nMode):
+def is_EnableMessage(hCam, which, hWnd):
+def is_SetHardwareGain(hCam, nMaster, nRed, nGreen, nBlue):
+def is_SetWhiteBalance(hCam, nMode):
+def is_SetWhiteBalanceMultipliers(hCam, dblRed, dblGreen, dblBlue):
+def is_GetWhiteBalanceMultipliers(hCam, pdblRed, pdblGreen, pdblBlue):
+def is_SetColorCorrection(hCam, nEnable, factors):
+def is_SetSubSampling(hCam, mode):
+def is_ForceTrigger(hCam):
+def is_GetBusSpeed(hCam):
+def is_SetBinning(hCam, mode):
+def is_ResetToDefault(hCam):
+def is_SetCameraID(hCam, nID):
+def is_SetBayerConversion(hCam, nMode):
+def is_SetHardwareGamma(hCam, nMode):
+def is_SetAutoParameter(hCam, param, pval1, pval2):
+def is_GetAutoInfo(hCam, pInfo):
+def is_GetImageHistogram(hCam, nID, ColorMode, pHistoMem):
+def is_SetTriggerDelay(hCam, nTriggerDelay):
+def is_SetGainBoost(hCam, mode):
+def is_SetGlobalShutter(hCam, mode):
+def is_SetExtendedRegister(hCam, index, value):
+def is_GetExtendedRegister(hCam, index, pwValue):
+def is_SetHWGainFactor(hCam, nMode, nFactor):
+def is_Renumerate(hCam, nMode):
+def is_GetHdrMode(hCam, Mode):
+def is_EnableHdr(hCam, Enable):
+def is_SetHdrKneepoints(hCam, KneepointArray, KneepointArraySize):
+def is_GetHdrKneepoints(hCam, KneepointArray, KneepointArraySize):
+def is_GetHdrKneepointInfo(hCam, KneepointInfo, KneepointInfoSize):
+def is_SetOptimalCameraTiming(hCam, Mode, Timeout, pMaxPxlClk, pMaxFrameRate):
+def is_GetSupportedTestImages(hCam, SupportedTestImages):
+def is_GetTestImageValueRange(hCam, TestImage, TestImageValueMin, TestImageValueMax):
+def is_SetSensorTestImage(hCam, Param1, Param2):
+def is_GetColorConverter(hCam, ColorMode, pCurrentConvertMode, pDefaultConvertMode, pSupportedConvertModes):
+def is_SetColorConverter(hCam, ColorMode, ConvertMode):
+def is_WaitForNextImage(hCam, timeout, ppcMem, imageID):
+def is_InitImageQueue(hCam, nMode):
+def is_ExitImageQueue(hCam):
+def is_SetTimeout(hCam, nMode, Timeout):
+def is_GetTimeout(hCam, nMode, pTimeout):
+def is_GetDuration(hCam, nMode, pnTime):
+def is_GetSensorScalerInfo(hCam, pSensorScalerInfo, nSensorScalerInfoSize):
+def is_SetSensorScaler(hCam, nMode, dblFactor):
+def is_GetImageInfo(hCam, nImageBufferID, pImageInfo, nImageInfoSize):
+def is_ImageFormat(hCam, nCommand, pParam, nSizeOfParam):
+def is_FaceDetection(hCam, nCommand, pParam, nSizeOfParam):
+def is_Focus(hCam, nCommand, pParam, nSizeOfParam):
+def is_ImageStabilization(hCam, nCommand, pParam, nSizeOfParam):
+def is_ScenePreset(hCam, nCommand, pParam, nSizeOfParam):
+def is_Zoom(hCam, nCommand, pParam, nSizeOfParam):
+def is_Sharpness(hCam, nCommand, pParam, nSizeOfParam):
+def is_Saturation(hCam, nCommand, pParam, nSizeOfParam):
+def is_TriggerDebounce(hCam, nCommand, pParam, nSizeOfParam):
+def is_ColorTemperature(hCam, nCommand, pParam, nSizeOfParam):
+def is_DirectRenderer(hCam, nMode, pParam, SizeOfParam):
+def is_HotPixel(hCam, nMode, pParam, SizeOfParam):
+def is_AOI(hCam, nCommand, pParam, SizeOfParam):
+def is_Transfer(hCam, nCommand, pParam, cbSizeOfParam):
+def is_BootBoost(hCam, nCommand, pParam, cbSizeOfParam):
+def is_DeviceFeature(hCam, nCommand, pParam, cbSizeOfParam):
+def is_Exposure(hCam, nCommand, pParam, cbSizeOfParam):
+def is_Trigger(hCam, nCommand, pParam, cbSizeOfParam):
+def is_DeviceInfo(hCam, nCommand, pParam, cbSizeOfParam):
+def is_OptimalCameraTiming(hCam, u32Command, pParam, u32SizeOfParam):
+def is_SetStarterFirmware(hCam, pcFilepath, uFilepathLen):
+def is_GetComportNumber(hCam, pComportNumber):
+def is_IO(hCam, nCommand, pParam, cbSizeOfParam):
+def is_AutoParameter(hCam, nCommand, pParam, cbSizeOfParam):
+def is_Convert(hCam, nCommand, pParam, cbSizeOfParam):
+def is_ParameterSet(hCam, nCommand, pParam, cbSizeOfParam):
+def is_EdgeEnhancement(hCam, nCommand, pParam, cbSizeOfParam):
+def is_PixelClock(hCam, nCommand, pParam, cbSizeOfParam):
+def is_ImageFile(hCam, nCommand, pParam, cbSizeOfParam):
+def is_Blacklevel(hCam, nCommand, pParam, cbSizeOfParam):
+def is_ImageBuffer(hCam, nCommand, pParam, cbSizeOfParam):
+def is_Measure(hCam, nCommand, pParam, cbSizeOfParam):
+def is_LUT(hCam, nCommand, pParam, cbSizeOfParams):
+def is_Gamma(hCam, nCommand, pParam, cbSizeOfParams):
+def is_Multicast(hCam, nCommand, pParam, cbSizeOfParams):
+def is_Sequencer(hCam, nCommand, pParam, cbSizeOfParams):
+def is_PersistentMemory(hCam, nCommand, pParam, cbSizeOfParam):
+def is_PowerDelivery(hCam, nCommand, pParam, cbSizeOfParams):
